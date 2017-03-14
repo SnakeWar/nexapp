@@ -1,0 +1,210 @@
+/* Empty. Add your own CSS if you like */
+.azul{
+    text-align: justify;
+}
+.botao-azul{
+    background-color: #003E65;
+    color: white;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.afastar{
+    margin-top: 50px;
+}
+.dec:link{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.dec:visited{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.dec:focus{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.button:hover{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.dec:active{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.ion-arrow-right-b{
+    font-size: 25px;
+}
+.ion-home{
+    font-size: 25px;
+}
+.ion-email{
+    font-size: 25px;
+}
+.ion-briefcase{
+    font-size: 25px;
+}
+.ion-checkmark-round{
+    font-size: 25px;
+}
+.ion-clipboard{
+    font-size: 25px;
+}
+.title{
+    font-size: 25px;
+}
+.ion-navicon-round{
+    font-size: 25px;
+}
+.pequeno img{
+    width: 50%;
+    max-width: 320px;
+    text-align: center;
+
+}
+.logo-home{
+    margin: 60px auto 60px auto;
+    width: 320px;
+}
+.nexbg{
+    background-image: url("../img/home-header.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+
+}
+.button-positive{
+    background:#96171a !important;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 3px solid;
+    border-color: rgba(0,0,0,0.3) !important;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 0px rgba(0,0,0,0.2);
+
+}
+button{
+
+
+}
+.home{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+.centro img{
+    width: 100%;
+    background-color: #96171a;
+    color: white;
+
+}
+.logo-menu{
+    background-color: #96171a !important;
+    width: 275px;
+    padding: 30px 0;
+    margin-top: -1px;
+}
+.logo-menu a img{
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+.title{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+}
+.cinza{
+    background-color: #E8EFF1;
+    padding: 15px 15px;
+    text-align: justify;
+}
+.servicos img{
+    width: 100%;
+}
+.servicos{
+    margin-top: 20px;
+}
+.font-menu{
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+    color: #96171a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+.scroll {
+    height: 100%;
+}
+
+#map {
+    margin: 10px auto;
+    width: 100%;
+    height: 80%;
+    border: solid 5px white;
+}
+.titulo{
+    background-color: #96171a;
+    color: white;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.conteudo{
+    background-color: white;
+    padding: 1% 2%;
+    max-width: 400px;
+    color: #96171a;
+    font-size: 14px;
+}
+.botao-centro{
+    color: white;
+    border: solid 1px #96171a;
+    border-radius: 5px;
+    background-color: #96171a;
+    padding: 5px 20px;
+    margin: 5px auto;
+    display: block;
+}
+.loc{
+    margin-bottom: 10px;
+}
+.top{
+    margin-top: 20px;
+}
+.borda a img{
+    border: solid 2px #E8EFF1;
+}
+.medio img{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+
+}
+
+.lista {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 16px;
+}
+
+li:before {
+    content: "■"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    font-size: 15px;
+    color: orange; /* Or a color you prefer */
+}
+ion-side-menu li:before{
+    content: "";
+}
+.lista li{
+    margin-bottom: 10px;
+}

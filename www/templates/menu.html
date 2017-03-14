@@ -1,0 +1,47 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+
+                    <div class="logo-menu">
+                        <a class="" href="http://nordesteexpresso.com.br">
+                            <img src="img/nex-logo-w.png">
+                        </a>
+                    </div>
+<ul>
+                    <li menu-close ui-sref="app.solicite" class="font-menu">
+                        Solicite uma Coleta
+                    </li>
+                    <li menu-close ui-sref="app.services" class="font-menu">
+                        Serviços
+                    </li>
+                    <li menu-close ui-sref="app.quemsomos" class="font-menu">
+                        Quem Somos
+                    </li>
+                    <li menu-close ui-sref="app.clientes" class="font-menu">
+                        Clientes
+                    </li>
+                    <li menu-close ui-sref="app.localizacao" class="font-menu">
+                        Localização
+                    </li>
+
+
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
