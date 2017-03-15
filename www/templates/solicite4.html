@@ -1,0 +1,36 @@
+<ion-view view-title="Solicite uma Coleta">
+    <ion-content class="cinza">
+        <div class="locais">
+            Locais de Coleta e Entrega: RN, CE e PB - Capitais e Interiores
+        </div>
+        <pre>{{entrega | json}}</pre>
+        <div class="card">
+            <div class="item item-text-wrap">
+                <div class="list">
+                    <img src="img/progress/progresso4.png" class="progresso">
+                    <div class="div-form">
+                        <label class="label-nex">Produto
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.produto">
+                        </label>
+                        <label class="label-nex">Volume
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.volume">
+                        </label>
+                        <label class="label-nex">NF(Se houver)
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.nf">
+                        </label>
+                        <label class="label-nex">Valor NF(Se houver)
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.valornf">
+                        </label>
+                        <label class="label-nex">Comentários
+                            <input class="form-nex" type="text-box" placeholder="" ng-model="entrega.comentarios">
+                        </label>
+                        <button class="button button-positive button-block bold" ui-sref="app.enviada({entrega: entrega})">
+                            ENVIAR SOLICITAÇÃO
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

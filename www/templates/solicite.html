@@ -6,32 +6,32 @@
         <div class="card">
             <div class="item item-text-wrap">
                 <div class="list">
-<img src="img/progresso/progresso1.png" class="progresso">
+<img src="img/progress/progresso1.png" class="progresso">
                     <div class="div-form">
                         <label class="label-nex">Nome
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.nome">
                         </label>
                         <label class="label-nex">Empresa
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.empresa">
                         </label>
                         <label class="label-nex">CPF/CNPJ
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.cpfcnpj">
                         </label>
                         <label class="label-nex">Telefone
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.telefone">
                         </label>
                         <label class="label-nex">E-mail
-                            <input class="form-nex" type="email" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.email">
                         </label>
                         <label class="label-nex">Serviço
-                            <select class="select-nex">
-                                <option selected>Pequenos Volumes</option>
-                                <option>Cargas e Encomendas</option>
-                                <option>Mudança</option>
-                                <option>Frete Fechado</option>
+                            <select class="select-nex" ng-model="entrega.servico">
+                                <option selected value="Pequenos Volumes">Pequenos Volumes</option>
+                                <option value="Cargas e Encomendas">Cargas e Encomendas</option>
+                                <option value="Mudança">Mudança</option>
+                                <option value="Frete Fechado">Frete Fechado</option>
                             </select>
                         </label>
-                        <button class="button button-positive button-block bold" ui-sref="app.solicite2">
+                        <button class="button button-positive button-block bold" ui-sref="app.solicite2({entrega: entrega})">
                             CONTINUAR SOLICITAÇÃO
                         </button>
                     </div>

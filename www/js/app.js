@@ -8,9 +8,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
-            setTimeout(function() {
+            /*setTimeout(function() {
              navigator.splashscreen.hide();
-             }, 300);
+             }, 300);*/
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -40,7 +40,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
                 url: '/solicite',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/solicite.html'
+                        templateUrl: 'templates/solicite.html',
+
                     }
                 }
             })
@@ -48,16 +49,48 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
                 url: '/solicite2',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/solicite2.html'
+                        templateUrl: 'templates/solicite2.html',
+                        controller: 'EntregaCtrl'
                     }
+                },
+                params: {
+                    entrega: {}
                 }
             })
             .state('app.solicite3', {
                 url: '/solicite3',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/solicite3.html'
+                        templateUrl: 'templates/solicite3.html',
+                        controller: 'EntregaCtrl'
                     }
+                },
+                params: {
+                    entrega: {}
+                }
+            })
+            .state('app.solicite4', {
+                url: '/solicite4',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/solicite4.html',
+                        controller: 'EntregaCtrl'
+                    }
+                },
+                params: {
+                    entrega: {}
+                }
+            })
+            .state('app.enviada', {
+                url: '/enviada',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/enviada.html',
+                        controller: 'EnvioCtrl'
+                    }
+                },
+                params: {
+                    entrega: {}
                 }
             })
             .state('app.services', {

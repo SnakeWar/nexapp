@@ -3,35 +3,36 @@
         <div class="locais">
             Saída
         </div>
+        <pre>{{entrega | json}}</pre>
         <div class="card">
             <div class="item item-text-wrap">
                 <div class="list">
-<img src="img/progresso/progresso2.png" class="progresso">
+<img src="img/progress/progresso2.png" class="progresso">
                     <div class="div-form">
                         <label class="label-nex">Saída
-                            <select class="select-nex">
-                                <option selected>Estado</option>
-                                <option>Ceará</option>
-                                <option>Paraíba</option>
-                                <option>Rio Grande do Norte</option>
+                            <select class="select-nex" ng-model="entrega.estadosaida">
+
+                                <option value="Ceará">Ceará</option>
+                                <option value="Paraíba">Paraíba</option>
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
                             </select>
                         </label>
                         <label class="label-nex">Cidade
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.cidadesaida">
                         </label>
                         <label class="label-nex">Bairro
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.bairrosaida">
                         </label>
                         <label class="label-nex">Rua
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.ruasaida">
                         </label>
                         <label class="label-nex">Número
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.numerosaida">
                         </label>
                         <label class="label-nex">Complementos
-                            <input class="form-nex" type="text" placeholder="">
+                            <input class="form-nex" type="text" placeholder="" ng-model="entrega.complementosaida">
                         </label>
-                        <button class="button button-positive button-block bold" ui-sref="app.solicite3">
+                        <button class="button button-positive button-block bold" ui-sref="app.solicite3({entrega: entrega})">
                             CONTINUAR SOLICITAÇÃO
                         </button>
                     </div>
