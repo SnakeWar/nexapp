@@ -102,34 +102,38 @@ angular.module('starter.controllers', [])
         $scope.entrega = {};
         $scope.entrega = $stateParams.entrega;
         console.log($scope.entrega);
-        $scope.enviada = "Carregando";
-            function deuCerto(){
+        $scope.enviada = "CARREGANDO";
+            function deuCerto(data){
                 $scope.enviada = "MENSAGEM ENVIADA COM SUCESSO!";
                 console.log('Enviado');
+                console.log(data);
             }
-            function deuErrado(){
+            function deuErrado(erro){
                 $scope.enviada = "MENSAGEM NÃO FOI ENVIADA!";
                 console.log('Não Enviado');
+                console.log(erro);
             }
-            $http.post("http://nordesteexpresso.com.br/envio.php", {
+            $http.post("http://nordesteexpresso.com.br/envio-app.php", {
+                recipient:"contato@nordesteexpresso.com.br",
+                subject:"Solicitação de Entrega pelo App",
                 nome: $scope.entrega.nome,
                 empresa: $scope.entrega.empresa,
                 cpf_cnpj: $scope.entrega.cpfcnpj,
                 telefone: $scope.entrega.telefone,
                 email: $scope.entrega.email,
                 servico: $scope.entrega.servico,
-                "estado-saida": $scope.entrega.estadosaida,
-                "Cidade-saida": $scope.entrega.cidadesaida,
-                "Bairro-saida": $scope.entrega.bairrosaida,
-                "Rua-saida": $scope.entrega.ruasaida,
-                "Número-saida": $scope.entrega.numerosaida,
-                "Complementos-saida": $scope.entrega.complementosaida,
-                "estado-destino": $scope.entrega.estadodestino,
-                "Cidade-destino-destino": $scope.entrega.cidadedestino,
-                "Bairro-destino": $scope.entrega.bairrodestino,
-                "Rua-destino": $scope.entrega.ruadestino,
-                "Numero-destino": $scope.entrega.numerodestino,
-                "Complementos-destino": $scope.entrega.complementodestino,
+                estado_saida: $scope.entrega.estadosaida,
+                Cidade_saida: $scope.entrega.cidadesaida,
+                Bairro_saida: $scope.entrega.bairrosaida,
+                Rua_saida: $scope.entrega.ruasaida,
+                Numero_saida: $scope.entrega.numerosaida,
+                Complementos_saida: $scope.entrega.complementosaida,
+                estado_destino: $scope.entrega.estadodestino,
+                Cidade_destino_destino: $scope.entrega.cidadedestino,
+                Bairro_destino: $scope.entrega.bairrodestino,
+                Rua_destino: $scope.entrega.ruadestino,
+                Numero_destino: $scope.entrega.numerodestino,
+                Complementos_destino: $scope.entrega.complementodestino,
                 produto: $scope.entrega.produto,
                 volume: $scope.entrega.volume,
                 nf: $scope.entrega.nf,
