@@ -3,7 +3,6 @@
         <div class="locais">
             Locais de Coleta e Entrega: RN, CE e PB - Capitais e Interiores
         </div>
-        <pre>{{entrega | json}}</pre>
         <div class="card">
             <div class="item item-text-wrap">
                 <div class="list">
@@ -22,9 +21,11 @@
                             <input class="form-nex" type="text" placeholder="" ng-model="entrega.valornf">
                         </label>
                         <label class="label-nex">Comentários
-                            <input class="form-nex" type="area-text" placeholder="" ng-model="entrega.comentarios">
+                            <textarea class="form-nex" placeholder="" ng-model="entrega.comentarios">
+                            </textarea>
                         </label>
-                        <button class="button button-positive button-block bold" ui-sref="app.enviada({entrega: entrega})">
+                        <button class="button button-positive button-block bold"
+                                ui-sref="app.enviada({entrega: entrega})">
                             ENVIAR SOLICITAÇÃO
                         </button>
                     </div>

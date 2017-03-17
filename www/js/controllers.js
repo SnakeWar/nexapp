@@ -102,7 +102,7 @@ angular.module('starter.controllers', [])
         $scope.entrega = {};
         $scope.entrega = $stateParams.entrega;
         console.log($scope.entrega);
-        $scope.enviada = "CARREGANDO";
+        $scope.enviada = "ENVIANDO...";
             function deuCerto(data){
                 $scope.enviada = "MENSAGEM ENVIADA COM SUCESSO!";
                 console.log('Enviado');
