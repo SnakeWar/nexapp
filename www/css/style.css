@@ -66,6 +66,12 @@
     width: 50%;
     max-width: 400px;
 }
+.pequeno .img-home{
+    width: 50%;
+    max-width: 400px;
+    display:block;
+    margin: 0 auto;
+}
 .logo-home{
     margin: 60px auto 60px auto;
     width: 320px;
