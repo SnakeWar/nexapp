@@ -57,14 +57,10 @@
 .ion-navicon-round{
     font-size: 25px;
 }
-.pequeno{
-    display:block;
-    margin: 0 auto;
-    max-width: 800px;
-}
+
 .pequeno img{
     width: 50%;
-    max-width: 400px;
+    height: 50%;
 }
 .pequeno .img-home{
     width: 50%;
@@ -94,10 +90,6 @@
     font-style: italic;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
     box-shadow: 0px 3px 0px rgba(0,0,0,0.2);
-
-}
-button{
-
 
 }
 .home{
@@ -285,4 +277,7 @@ ion-side-menu li:before{
 }
 .centro{
     margin: 0 auto;
+}
+.progresso{
+    width: 100%;
 }
