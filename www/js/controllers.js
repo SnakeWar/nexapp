@@ -98,15 +98,14 @@ angular.module('starter.controllers', [])
         $scope.entrega = $stateParams.entrega;
         console.log($scope.entrega);
     })
-    .controller('EnvioCtrl', function ($state, $stateParams, $scope, $http ) {
+    .controller('EnvioCtrl', function ($state, $stateParams, $scope, $http, $ionicHistory ) {
         $scope.entrega = {};
         $scope.entrega = $stateParams.entrega;
         console.log($scope.entrega);
         $scope.enviada = "ENVIANDO...";
             function deuCerto(data){
                 $scope.enviada = "MENSAGEM ENVIADA COM SUCESSO!";
-               /* $ionicHistory.clearCache();
-                $ionicHistory.clearHistory();*/
+                $scope.entrega = {};
                 console.log('Enviado');
                 console.log(data);
             }
